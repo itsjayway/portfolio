@@ -27,11 +27,18 @@ function NameCard() {
     <>
       <Card>
         <div className="flex flex-row justify-center items-center gap-x-5">
-          <img
-            className="w-[6rem] lg:w-[8rem] lg:h-[8rem] rounded-full"
-            src="https://avatars.githubusercontent.com/u/70596906?v=4"
-            alt="avatar"
-          />
+          <motion.div
+            className="flex justify-center items-center"
+            initial={{ x: -30, opacity: 0, scale: 0.8 }}
+            animate={{ x: 0, opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            <img
+              className="w-[6rem] lg:w-[8rem] lg:h-[8rem] rounded-full"
+              src="https://avatars.githubusercontent.com/u/70596906?v=4"
+              alt="avatar"
+            />
+          </motion.div>
           <motion.ul
             className="flex flex-col h-[100%] justify-center"
             variants={title}

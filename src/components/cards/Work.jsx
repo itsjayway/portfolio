@@ -1,5 +1,11 @@
 import React from 'react';
 import { useIsMobileViewport } from '../hooks/useIsMobileViewport';
+import { classes } from '../../utils/classes';
+import {
+  CARD_ITEM_DESCRIPTION,
+  CARD_ITEM_SUBTITLE,
+  CARD_ITEM_TITLE
+} from '../../utils/classConstants';
 
 function RenderDate(data, isMobile) {
   let startDate, endDate;
@@ -12,7 +18,7 @@ function RenderDate(data, isMobile) {
   }
 
   return (
-    <h1 className="text-gray-400 text-lg md:text-xl">
+    <h1 className={classes(CARD_ITEM_SUBTITLE)}>
       {startDate} - {endDate}
     </h1>
   );
@@ -59,12 +65,10 @@ function Work({ data, dropdownIsOpen, setDropdownIsOpen }) {
           className={`flex flex-col justify-center basis-[70%] shrink-0 grow-0`}
         >
           <div className="mb-1">
-            <h1 className="text-white text-2xl md:text-3xl">
-              {data.company_name}
-            </h1>
+            <h1 className={classes(CARD_ITEM_TITLE)}>{data.company_name}</h1>
             {RenderDate(data)}
           </div>
-          <h2 className="text-gray-200 text-xl md:text-2xl">{data.title}</h2>
+          <h2 className={classes(CARD_ITEM_DESCRIPTION)}>{data.title}</h2>
         </div>
       </div>
       <div
@@ -73,7 +77,7 @@ function Work({ data, dropdownIsOpen, setDropdownIsOpen }) {
     ${dropdownIsOpen ? 'opacity-100 py-5' : 'max-h-0 opacity-0 py-0'}
   `}
       >
-        <p className="italic text-gray-300 text-xl lg:text-2xl ">
+        <p className={classes(CARD_ITEM_DESCRIPTION, 'italic')}>
           {data.description}
         </p>
       </div>

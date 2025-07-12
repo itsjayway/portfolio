@@ -4,6 +4,9 @@ import Work from './Work';
 import SeeMore from './SeeMore';
 import data from '../../assets/data/experience.json';
 
+import { classes } from '../../utils/classes';
+import { CARD_TITLE } from '../../utils/classConstants';
+
 function ExpandAllButton({ onClick }) {
   return (
     <button
@@ -66,9 +69,7 @@ function WorkCard() {
   return (
     <Card>
       <div className="flex flex-col">
-        <h1 className="text-center text-white text-2xl lg:text-4xl">
-          Professional Experience
-        </h1>
+        <h1 className={classes(CARD_TITLE)}>Professional Experience</h1>
       </div>
       <div className="flex justify-end gap-x-5">
         {!allAreOpen && <ExpandAllButton onClick={handleSetAllOpen} />}

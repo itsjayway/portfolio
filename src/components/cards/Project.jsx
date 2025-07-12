@@ -1,6 +1,12 @@
 import React from 'react';
 import Chip from './Chip';
 import { useIsMobileViewport } from '../hooks/useIsMobileViewport';
+import { classes } from '../../utils/classes';
+import {
+  CARD_ITEM_DESCRIPTION,
+  CARD_ITEM_SUBTITLE,
+  CARD_ITEM_TITLE
+} from '../../utils/classConstants';
 
 function Project({ data }) {
   const isMobile = useIsMobileViewport(1380);
@@ -12,15 +18,15 @@ function Project({ data }) {
         target="_blank"
         rel="noreferrer"
       >
-        <h1 className="text-white text-2xl md:text-3xl">{data.projectName}</h1>
+        <h1 className={classes(CARD_ITEM_TITLE)}>{data.projectName}</h1>
         <hr className="border-gray-700 mt-1 mb-2" />
         {data.topics && (
-          <h1 className="text-highlight-dark text-xl md:text-2xl">
+          <h1 className={classes(CARD_ITEM_SUBTITLE)}>
             {data.topics.join(', ')}
           </h1>
         )}
         <div className={`flex flex-col w-[${isMobile ? '100%' : '80%'}]`}>
-          <h1 className="text-white text-xl">{data.description}</h1>
+          <h1 className={classes(CARD_ITEM_DESCRIPTION)}>{data.description}</h1>
         </div>
       </a>
       <div className="flex gap-x-2 flex-wrap">

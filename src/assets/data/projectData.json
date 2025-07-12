@@ -1,0 +1,112 @@
+[
+  {
+    "projectName": "Alveus Sanctuary Twitch Extension",
+    "topics": ["non-profit", "community"],
+    "description": "Twitch extension for Alveus Sanctuary, allowing stream viewers to learn more about the ambassadors at the sanctuary.",
+    "technologies": [
+      {
+        "label": "typescript",
+        "color": "red"
+      }
+    ],
+    "href": "https://github.com/alveusgg/extension"
+  },
+  {
+    "projectName": "Sami's Automotive Service Support for You (SASSY)",
+    "topics": ["CRM"],
+    "description": "Full-stack service scheduling platform using React, Python, and Azure, enabling freelance mechanics to manage availability, client requests, and job summaries with minimal manual coordination.",
+    "technologies": [
+      {
+        "label": "react",
+        "color": "pink"
+      },
+      {
+        "label": "python",
+        "color": "lime"
+      },
+      {
+        "label": "Azure",
+        "color": "sky"
+      }
+    ],
+    "imageSrc": [
+      "../../assets/images/sassy1.png",
+      "../../assets/images/sassy2.png"
+    ]
+  },
+  {
+    "projectName": "clAImber",
+    "topics": ["AI/ML"],
+    "description": "Scalable batch processing service on Azure to automatically detect and trim climbing video clips based on human figure boundaries and edge-detected GROUND/TOP reference lines,",
+    "technologies": [
+      {
+        "label": "python",
+        "color": "lime"
+      },
+      {
+        "label": "fastAPI",
+        "color": "teal"
+      },
+      {
+        "label": "Azure",
+        "color": "yellow"
+      }
+    ]
+  },
+  {
+    "projectName": "Fornear",
+    "topics": ["food insecurity", "staff tools"],
+    "description": "Click-and-collect proposal to benefit the operations of Petey's Pantry @ Oglethorpe University.",
+    "technologies": [
+      {
+        "label": "react",
+        "color": "pink"
+      },
+      {
+        "label": "python",
+        "color": "lime"
+      },
+      {
+        "label": "mongoDB",
+        "color": "green"
+      }
+    ],
+    "href": "https://github.com/It-s-Saturday/Fornear"
+  },
+  {
+    "projectName": "ChatJoin",
+    "topics": ["communication"],
+    "description": "Discord bot that notifies you when a POI joins a voice channel.",
+    "technologies": [
+      {
+        "label": "python",
+        "color": "lime"
+      },
+      {
+        "label": "discord API",
+        "color": "purple"
+      },
+      {
+        "label": "mongoDB",
+        "color": "green"
+      },
+      {
+        "label": "EC2",
+        "color": "orange"
+      }
+    ],
+    "href": "https://github.com/It-s-Saturday/ChatJoin"
+  },
+  {
+    "projectName": "simulating-breaking-constraints-for-agents",
+    "topics": ["physics, AI agents"],
+    "description": "Study of Newtonian collision and force threshold to simulate crumbling of simple structures.",
+    "technologies": [
+      {
+        "label": "three.js",
+        "color": "gray"
+      }
+    ],
+    "href": "https://github.com/itsjayway/simulating-breaking-contraint-for-agents"
+  }
+]

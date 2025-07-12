@@ -1,0 +1,103 @@
+{
+  "work_experiences": [
+    {
+      "id": 1,
+      "company_name": "Georgia Tech Research Institute",
+      "title": "Research Intern",
+      "start_date": "Jan 2022",
+      "start_date_formatted": "01/2022",
+      "end_date": "May 2022",
+      "end_date_formatted": "05/2022",
+      "description": "Conducted technical integration and rapid prototyping for the Advanced Computing Laboratory (ACL-AWTD-TIB) using Python (Parrot Olympe API), Raspberry Pi, LabVIEW, and SolidWorks.",
+      "filepath": "/images/GTRI.png",
+      "circular": false,
+      "shadow": true
+    },
+    {
+      "id": 2,
+      "company_name": "Vanguard",
+      "title": "Application Development Intern",
+      "start_date": "Jun 2022",
+      "start_date_formatted": "06/2022",
+      "end_date": "Aug 2022",
+      "end_date_formatted": "08/2022",
+      "description": "Streamlined the new hire onboarding process. Led a team of 7 interns to create an internal rideshare app.",
+      "filepath": "/images/VG.png",
+      "circular": false,
+      "shadow": true
+    },
+    {
+      "id": 3,
+      "company_name": "The Center for Policing Equity",
+      "title": "Software Engineer Intern",
+      "start_date": "Aug 2022",
+      "start_date_formatted": "08/2022",
+      "end_date": "Dec 2022",
+      "end_date_formatted": "12/2022",
+      "description": "Built a type-to-search and refresh component to interface Vue.js front-end for the internal Content Management System post viewer admin tool.",
+      "filepath": "/images/CPE.png",
+      "circular": true,
+      "shadow": true
+    },
+    {
+      "id": 4,
+      "company_name": "Colgate-Palmolive",
+      "title": "Application and Software Development Intern",
+      "start_date": "Jan 2023",
+      "start_date_formatted": "01/2023",
+      "end_date": "May 2023",
+      "end_date_formatted": "05/2023",
+      "description": "Developed React components for an analytics tool and organized bi-weekly meetings to foster communication and cohesion among a team of 12 interns.",
+      "filepath": "/images/COLPAL.png",
+      "circular": false
+    },
+    {
+      "id": 5,
+      "company_name": "YWCC Capstone - IRMS",
+      "title": "Project Manager",
+      "start_date": "Jan 2023",
+      "start_date_formatted": "01/2023",
+      "end_date": "May 2023",
+      "end_date_formatted": "05/2023",
+      "description": "(Senior Capstone: Colgate-Palmolive) Lead a team of 5 students to develop an OutSystems application for intern acquisition, assignment, and assessment.",
+      "filepath": "/images/IRMS.png",
+      "circular": true
+    },
+    {
+      "id": 6,
+      "company_name": "It's Saturday",
+      "title": "Founder, Development Team Lead",
+      "start_date": "Aug 2021",
+      "start_date_formatted": "08/2021",
+      "end_date": "Aug 2023",
+      "end_date_formatted": "08/2023",
+      "description": "Lead the development team of a startup group comprised of college students. ",
+      "filepath": "/images/ISTS.png",
+      "circular": false
+    },
+    {
+      "id": 7,
+      "company_name": "United States Department of Defense",
+      "title": "Software Engineer",
+      "start_date": "Jul 2023",
+      "start_date_formatted": "07/2023",
+      "end_date": "April 2024",
+      "end_date_formatted": "04/2024",
+      "description": "Developed full-stack applications involving backend data processing in Python and frontend development with Vue.js.",
+      "filepath": "/images/dod.png",
+      "circular": true
+    },
+    {
+      "id": 8,
+      "company_name": "Microsoft",
+      "title": "Software Engineer I",
+      "start_date": "May 2024",
+      "start_date_formatted": "05/2024",
+      "end_date": "Present",
+      "end_date_formatted": "Present",
+      "description": "Engineering scalable networking systems with a focus on performance optimization and intelligent networking routing, strengthening Microsoft's global infrastructure and speeding up your internet traffic.",
+      "filepath": "/images/msft.png",
+      "circular": false
+    }
+  ]
+}

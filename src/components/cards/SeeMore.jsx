@@ -1,14 +1,13 @@
 import React from 'react';
+import { classes } from '../../utils/classes';
+import { MORE_BUTTON } from '../../utils/classConstants';
 
 function SeeMore({ href }) {
   return (
-    <a
-      href={href}
-      className="relative text-right text-white text-2xl hover:scale-[1.01] transition"
-      target="_blank"
-      rel="noreferrer"
-    >
-      More ➕
+    <a className="text-right" href={href} target="_blank" rel="noreferrer">
+      <button className={classes(MORE_BUTTON, 'border-0 text-right')}>
+        More ➕
+      </button>
     </a>
   );
 }

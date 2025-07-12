@@ -5,14 +5,11 @@ import SeeMore from './SeeMore';
 import data from '../../assets/data/experience.json';
 
 import { classes } from '../../utils/classes';
-import { CARD_TITLE } from '../../utils/classConstants';
+import { CARD_TITLE, DRAWER_BUTTON } from '../../utils/classConstants';
 
 function ExpandAllButton({ onClick }) {
   return (
-    <button
-      onClick={onClick}
-      className="text-white text-center hover:underline"
-    >
+    <button onClick={onClick} className={classes(DRAWER_BUTTON)}>
       Expand All
     </button>
   );
@@ -20,10 +17,7 @@ function ExpandAllButton({ onClick }) {
 
 function CollapseAllButton({ onClick }) {
   return (
-    <button
-      onClick={onClick}
-      className="text-white text-center hover:underline"
-    >
+    <button onClick={onClick} className={classes(DRAWER_BUTTON)}>
       Collapse All
     </button>
   );

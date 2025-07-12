@@ -51,7 +51,7 @@ function Work({ data, dropdownIsOpen, setDropdownIsOpen }) {
       `}
     >
       <div
-        className={`flex justify-between bg-gray-700 gap-x-5 p-5 rounded-[1.25rem] transition w-[100%]
+        className={`flex justify-between bg-gray-700 hover:bg-gray-600 gap-x-5 p-5 rounded-[1.25rem] transition w-[100%]
         ${!dropdownIsOpen ? 'hover:scale-[1.01]' : ''}
         `}
       >

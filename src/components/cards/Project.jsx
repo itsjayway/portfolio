@@ -30,7 +30,7 @@ function Project({ data }) {
           <h1 className={classes(CARD_ITEM_DESCRIPTION)}>{data.description}</h1>
         </div>
       </a>
-      <div className="flex gap-x-2 flex-wrap">
+      <div className="flex gap-x-2 gap-y-1 flex-wrap">
         {data.technologies
           .sort((a, b) => a.label.localeCompare(b.label))
           .map((technology) => (

@@ -1,5 +1,16 @@
 import { classes } from './classes';
 
+let REDUCED_MOTION_PREFERRED = window.matchMedia(
+  '(prefers-reduced-motion: reduce)'
+).matches;
+
+let HOVER_SCALE = REDUCED_MOTION_PREFERRED
+  ? ''
+  : 'hover:scale-[1.02] transition';
+let WORK_DESC_SLIDE = REDUCED_MOTION_PREFERRED
+  ? ''
+  : 'transition-all duration-200 ease-in-out';
+
 const CARD_TITLE =
   'text-center text-white text-3xl md:text-4xl xl:text-4xl font-bold';
 const CARD_ITEM_TITLE =
@@ -14,7 +25,7 @@ const DRAWER_BUTTON = classes(
   'text-center border-2 border-gray-600 rounded-lg px-4 py-2 transition-all duration-200 ease-in-out hover:bg-gray-600 hover:text-white'
 );
 
-const MORE_BUTTON = classes(DRAWER_BUTTON, 'border-0 text-right');
+const MORE_BUTTON = classes(DRAWER_BUTTON, HOVER_SCALE, 'border-0 text-right');
 
 export {
   CARD_TITLE,
@@ -22,5 +33,8 @@ export {
   CARD_ITEM_SUBTITLE,
   CARD_ITEM_DESCRIPTION,
   DRAWER_BUTTON,
-  MORE_BUTTON
+  MORE_BUTTON,
+  REDUCED_MOTION_PREFERRED,
+  HOVER_SCALE,
+  WORK_DESC_SLIDE
 };

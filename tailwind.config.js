@@ -19,7 +19,11 @@ module.exports = {
         'secondary-light': '#FFBF9B',
         'accent-light': '#B46060',
         'highlight-light': '#4D4D4D'
-      }
+      },
+      fontFamily: {
+        cascadia: ['Cascadia Mono', 'monospace'],
+        serif: ['DM Serif Display', 'serif']
+      },
     }
   },
   plugins: []

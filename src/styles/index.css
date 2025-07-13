@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css?family=DM+Serif+Display');
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono');
 
 body {
   font-family: 'DM Serif Display', serif;

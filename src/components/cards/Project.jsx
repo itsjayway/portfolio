@@ -5,7 +5,8 @@ import { classes } from '../../utils/classes';
 import {
   CARD_ITEM_DESCRIPTION,
   CARD_ITEM_SUBTITLE,
-  CARD_ITEM_TITLE
+  CARD_ITEM_TITLE,
+  HOVER_SCALE
 } from '../../utils/classConstants';
 
 function Project({ data }) {
@@ -13,7 +14,7 @@ function Project({ data }) {
   return (
     <div className="flex flex-col gap-y-3">
       <a
-        className="flex flex-col hover:scale-[1.01] transition"
+        className={classes(HOVER_SCALE, 'flex flex-col')}
         href={data.href}
         target="_blank"
         rel="noreferrer"

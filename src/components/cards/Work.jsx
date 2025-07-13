@@ -4,7 +4,9 @@ import { classes } from '../../utils/classes';
 import {
   CARD_ITEM_DESCRIPTION,
   CARD_ITEM_SUBTITLE,
-  CARD_ITEM_TITLE
+  CARD_ITEM_TITLE,
+  HOVER_SCALE,
+  WORK_DESC_SLIDE
 } from '../../utils/classConstants';
 
 function RenderDate(data, isMobile) {
@@ -47,12 +49,12 @@ function Work({ data, dropdownIsOpen, setDropdownIsOpen }) {
       className={`flex flex-col items-center ${
         data.description ? 'cursor-pointer' : ''
       }
-      ${dropdownIsOpen ? 'hover:scale-[1.01] transition' : ''}
+      ${dropdownIsOpen ? classes(HOVER_SCALE, 'transition') : ''}
       `}
     >
       <div
         className={`flex justify-between bg-gray-700 hover:bg-gray-600 gap-x-5 p-5 rounded-[1.25rem] transition w-[100%]
-        ${!dropdownIsOpen ? 'hover:scale-[1.01]' : ''}
+        ${!dropdownIsOpen ? classes(HOVER_SCALE) : ''}
         `}
       >
         {!isMobile && (
@@ -72,10 +74,12 @@ function Work({ data, dropdownIsOpen, setDropdownIsOpen }) {
         </div>
       </div>
       <div
-        className={`w-[90%] justify-between p-5 rounded-br-[1.25rem] rounded-bl-[1.25rem] shadow-lg bg-gradient-to-b from-gray-700 to-gray-600
-    transition-all duration-200 ease-in-out overflow-hidden
-    ${dropdownIsOpen ? 'opacity-100 py-5' : 'max-h-0 opacity-0 py-0'}
-  `}
+        className={classes(
+          WORK_DESC_SLIDE,
+          `w-[90%] justify-between p-5 rounded-br-[1.25rem] rounded-bl-[1.25rem] shadow-lg bg-gradient-to-b from-gray-700 to-gray-600
+    overflow-hidden`,
+          dropdownIsOpen ? 'opacity-100 py-5' : 'max-h-0 opacity-0 py-0'
+        )}
       >
         <p className={classes(CARD_ITEM_DESCRIPTION, 'italic')}>
           {data.description}
